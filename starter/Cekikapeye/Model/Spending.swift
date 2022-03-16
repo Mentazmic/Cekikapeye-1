@@ -7,8 +7,6 @@
 //
 
 import Foundation
+import CoreData
 
-struct Spending {
-    var content: String
-    var amount: Double
-}
+class Spending: NSManagedObject {}

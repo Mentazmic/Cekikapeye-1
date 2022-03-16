@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CD84A6E27E103BB00AD8815 /* SettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD84A6D27E103BB00AD8815 /* SettingsRepository.swift */; };
+		9CE9570C27E2121E009D9877 /* Cekikapeye.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9570A27E2121E009D9877 /* Cekikapeye.xcdatamodeld */; };
+		9CE9570E27E21256009D9877 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9570D27E21256009D9877 /* CoreDataStack.swift */; };
+		9CE9571027E21586009D9877 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9570F27E21586009D9877 /* Person.swift */; };
+		9CE9571227E2191E009D9877 /* PeopleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9571127E2191E009D9877 /* PeopleRepository.swift */; };
 		C9C14FDC20B32832001DE401 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C14FDB20B32832001DE401 /* AppDelegate.swift */; };
 		C9C14FE120B32832001DE401 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C14FDF20B32832001DE401 /* Main.storyboard */; };
 		C9C14FE320B32833001DE401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C14FE220B32833001DE401 /* Assets.xcassets */; };
@@ -21,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9CD84A6D27E103BB00AD8815 /* SettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepository.swift; sourceTree = "<group>"; };
+		9CE9570B27E2121E009D9877 /* Cekikapeye.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cekikapeye.xcdatamodel; sourceTree = "<group>"; };
+		9CE9570D27E21256009D9877 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		9CE9570F27E21586009D9877 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		9CE9571127E2191E009D9877 /* PeopleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleRepository.swift; sourceTree = "<group>"; };
 		C9C14FD820B32832001DE401 /* Cekikapeye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cekikapeye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C14FDB20B32832001DE401 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9C14FE020B32832001DE401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CE9570927E211F5009D9877 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9CE9570A27E2121E009D9877 /* Cekikapeye.xcdatamodeld */,
+				9CE9570D27E21256009D9877 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		C9C14FCF20B32832001DE401 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +116,12 @@
 		C9C14FF420B32F0A001DE401 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9CE9570927E211F5009D9877 /* CoreData */,
 				C9C14FF520B32F1D001DE401 /* Spending.swift */,
 				C9C14FF720B33307001DE401 /* SpendingRepository.swift */,
+				9CD84A6D27E103BB00AD8815 /* SettingsRepository.swift */,
+				9CE9570F27E21586009D9877 /* Person.swift */,
+				9CE9571127E2191E009D9877 /* PeopleRepository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,8 +213,13 @@
 				C9C14FF820B33307001DE401 /* SpendingRepository.swift in Sources */,
 				C9C14FFD20B33FC5001DE401 /* AddSpendingViewController.swift in Sources */,
 				C9C1500720B6BB44001DE401 /* SettingsViewController.swift in Sources */,
+				9CE9571227E2191E009D9877 /* PeopleRepository.swift in Sources */,
 				C9C1500920B6BB85001DE401 /* CircleButton.swift in Sources */,
 				C9C14FF620B32F1D001DE401 /* Spending.swift in Sources */,
+				9CD84A6E27E103BB00AD8815 /* SettingsRepository.swift in Sources */,
+				9CE9571027E21586009D9877 /* Person.swift in Sources */,
+				9CE9570E27E21256009D9877 /* CoreDataStack.swift in Sources */,
+				9CE9570C27E2121E009D9877 /* Cekikapeye.xcdatamodeld in Sources */,
 				C9C14FFC20B33FC5001DE401 /* ListViewController.swift in Sources */,
 				C9C1500520B6B017001DE401 /* PeopleViewController.swift in Sources */,
 				C9C14FDC20B32832001DE401 /* AppDelegate.swift in Sources */,
@@ -392,6 +420,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9CE9570A27E2121E009D9877 /* Cekikapeye.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9CE9570B27E2121E009D9877 /* Cekikapeye.xcdatamodel */,
+			);
+			currentVersion = 9CE9570B27E2121E009D9877 /* Cekikapeye.xcdatamodel */;
+			path = Cekikapeye.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C9C14FD020B32832001DE401 /* Project object */;
 }

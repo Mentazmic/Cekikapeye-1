@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Person" representedClassName=".Person" syncable="YES" codeGenerationType="category">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="spendings" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Spending" inverseName="person" inverseEntity="Spending"/>
+    </entity>
+    <entity name="Spending" representedClassName=".Spending" syncable="YES" codeGenerationType="category">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="spendings" inverseEntity="Person"/>
+    </entity>
+    <elements>
+        <element name="Person" positionX="-3044.10546875" positionY="214.9296875" width="128" height="73"/>
+        <element name="Spending" positionX="-2700.9921875" positionY="304.35546875" width="97.91796875" height="88"/>
+    </elements>
+</model>
